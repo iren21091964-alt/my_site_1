@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ирина Айбулатова — промпт-инженер и вайбкодер</title>
+  <meta name="description" content="Промпты, персональные GPT-помощники, контент и полезные веб-инструменты. Ирина Айбулатова — промпт-инженер и вайбкодер. Первая встреча 15–20 минут бесплатно.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ирина Айбулатова — промпт-инженер и вайбкодер">
+  <meta property="og:description" content="Промпты, персональные GPT-помощники, контент и полезные веб-инструменты. Первая встреча 15–20 минут бесплатно.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="assets/portrait/irina.png">
+  <!-- TODO: добавить og:url после публикации сайта -->
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ========== ШАПКА ========== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top">Ирина Айбулатова</a>
+
+      <nav class="nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#pricing">Стоимость</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li class="nav__cta-mobile">
+            <a class="btn btn--primary" href="#contacts">Обсудить задачу</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--cta-pulse header__cta" href="#contacts">Обсудить задачу</a>
+
+      <button
+        class="burger"
+        type="button"
+        id="burger"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Открыть меню"
+      >
+        <span class="burger__line" aria-hidden="true"></span>
+        <span class="burger__line" aria-hidden="true"></span>
+        <span class="burger__line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== ПЕРВЫЙ ЭКРАН ========== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__brand hero-animate" style="--d: 0s">Ирина Айбулатова</p>
+          <p class="hero__eyebrow hero-animate" style="--d: 0.08s">промпт-инженер · специалист по нейросетям · вайбкодер</p>
+          <h1 id="hero-title" class="hero-animate" style="--d: 0.16s">Помогаю превратить нейросети из «чего-то сложного» в полезный рабочий инструмент</h1>
+          <p class="hero__lead hero-animate" style="--d: 0.28s">
+            Разберусь в вашей задаче, объясню всё понятным языком и помогу подобрать решение — от промпта и персонального GPT-помощника до сайта или небольшого веб-приложения.
+          </p>
+          <div class="hero__actions hero-animate" style="--d: 0.4s">
+            <a class="btn btn--primary btn--lg btn--cta-pulse" href="#contacts">Обсудить мою задачу</a>
+            <p class="hero__note">Первая консультация 15–20 минут — бесплатно</p>
+            <p class="hero__hint">Не знаете, что именно вам нужно? Это нормально. С этого и начнём.</p>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <!--
+            Портрет: assets/portrait/irina.png
+            (исходный файл также лежит в корне проекта)
+          -->
+          <figure class="portrait">
+            <span class="portrait__frame" aria-hidden="true"></span>
+            <span class="portrait__accent" aria-hidden="true"></span>
+            <div class="portrait__media">
+              <img
+                class="portrait__img"
+                src="assets/portrait/irina.png"
+                alt="Портрет Ирины Айбулатовой"
+                width="560"
+                height="700"
+                onerror="this.classList.add('is-missing'); this.removeAttribute('src');"
+              >
+              <div class="portrait__placeholder" aria-hidden="true">
+                <span>Фото Ирины</span>
+                <small>assets/portrait/irina.png</small>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== С КАКИМИ ЗАДАЧАМИ ========== -->
+    <section class="section section--alt" id="tasks" aria-labelledby="tasks-title">
+      <div class="container narrow">
+        <h2 id="tasks-title">Возможно, вам нужна не «нейросеть». Вам нужно решить конкретную задачу.</h2>
+        <p class="section__lead">
+          Не обязательно заранее знать, какой инструмент вам нужен. Можно просто рассказать, что хочется сделать, упростить или ускорить.
+        </p>
+
+        <ul class="task-list task-list--stagger reveal">
+          <li>сократить время на тексты, идеи и контент;</li>
+          <li>настроить ChatGPT под свою работу;</li>
+          <li>создать персонального GPT-помощника;</li>
+          <li>разработать промпты под конкретные задачи;</li>
+          <li>разобраться с целевой аудиторией и контентом;</li>
+          <li>сделать небольшой сайт, калькулятор, генератор или другой веб-инструмент;</li>
+          <li>понять, какие современные технологии могут быть полезны именно в вашей ситуации.</li>
+        </ul>
+
+        <p class="section__closing">
+          Не обязательно знать, как называется нужное решение. Расскажите о задаче своими словами — дальше разберёмся вместе.
+        </p>
+        <a class="btn btn--primary" href="#contacts">Рассказать о задаче</a>
+      </div>
+    </section>
+
+    <!-- ========== УСЛУГИ ========== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <p class="section__label" aria-hidden="true">Услуги</p>
+        <h2 id="services-title" class="section__title">Чем я могу помочь</h2>
+
+        <div class="cards cards--4">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 8.5h16M6 14h12M6 19.5h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="3.5" y="4.5" width="21" height="19" rx="3" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3>Нейросети под вашу работу</h3>
+            <p>Настройка ChatGPT, разработка промптов, анализ аудитории, идеи, тексты, сценарии и контент-планы.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="11" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 22.5c1.4-3.2 4.1-4.8 7.5-4.8s6.1 1.6 7.5 4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M20.5 7.5l3 1.5-3 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Персональные GPT-помощники</h3>
+            <p>Создание помощников под конкретного человека, специалиста или небольшой бизнес — с учётом его задач и особенностей работы.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="5.5" width="20" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M10 23.5h8M14 19.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Сайты и веб-инструменты</h3>
+            <p>Небольшие сайты, калькуляторы, генераторы и полезные веб-приложения с помощью вайбкодинга.</p>
+          </article>
+
+          <article class="card card--accent reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M14 8.5v6l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Первая консультация</h3>
+            <p>Если пока непонятно, какой инструмент нужен, сначала спокойно обсудим задачу и возможные варианты.</p>
+            <p class="card__meta">15–20 минут бесплатно.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ПРОЕКТЫ ========== -->
+    <section class="section section--projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label" aria-hidden="true">Портфолио</p>
+          <h2 id="projects-title" class="section__title">Мои проекты</h2>
+          <p class="section__lead">Лучше один раз показать работающий инструмент, чем долго рассказывать о технологиях.</p>
+        </header>
+
+        <!-- ПРОЕКТ 1: Калькулятор семейного бюджета -->
+        <article class="project reveal">
+          <div class="project__preview">
+            <!--
+              СКРИНШОТ: положите изображение сюда:
+              assets/projects/budget-calculator/preview.jpg
+              (можно также preview.png / preview.webp)
+            -->
+            <img
+              src="assets/projects/budget-calculator/preview.jpg"
+              alt="Интерфейс калькулятора семейного бюджета"
+              width="960"
+              height="640"
+              loading="lazy"
+              onerror="this.classList.add('is-missing'); this.removeAttribute('src');"
+            >
+            <div class="project__placeholder" aria-hidden="true">
+              <span>Скриншот калькулятора</span>
+              <small>assets/projects/budget-calculator/preview.jpg</small>
+            </div>
+          </div>
+          <div class="project__body">
+            <h3>Калькулятор семейного бюджета</h3>
+            <p class="project__subtitle">Домашние финансы — без таблиц и сложных формул</p>
+            <p>
+              Веб-приложение для удобного учёта семейных финансов. Помогает записывать доходы и расходы, видеть аналитику, контролировать баланс и ставить цели накоплений.
+            </p>
+            <ul class="tags" aria-label="Возможности проекта">
+              <li>Учёт операций</li>
+              <li>Аналитика</li>
+              <li>Цели накоплений</li>
+              <li>Поиск и фильтры</li>
+              <li>Экспорт CSV</li>
+              <li>Светлая и тёмная тема</li>
+            </ul>
+            <p class="project__note">Работает прямо в браузере без регистрации.</p>
+            <!-- TODO: вставить ссылку на работающий проект «Калькулятор семейного бюджета» -->
+            <a class="btn btn--secondary project-link" href="#" data-placeholder="true">Посмотреть проект</a>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 2: Генератор идей для постов -->
+        <article class="project project--reverse reveal">
+          <div class="project__preview">
+            <!--
+              СКРИНШОТ: положите изображение сюда:
+              assets/projects/idea-generator/preview.jpg
+            -->
+            <img
+              src="assets/projects/idea-generator/preview.jpg"
+              alt="Интерфейс генератора идей для постов"
+              width="960"
+              height="640"
+              loading="lazy"
+              onerror="this.classList.add('is-missing'); this.removeAttribute('src');"
+            >
+            <div class="project__placeholder" aria-hidden="true">
+              <span>Скриншот генератора идей</span>
+              <small>assets/projects/idea-generator/preview.jpg</small>
+            </div>
+          </div>
+          <div class="project__body">
+            <h3>Генератор идей для постов</h3>
+            <p class="project__subtitle">Когда нужно вести блог, а идеи закончились раньше недели</p>
+            <p>
+              Простой веб-инструмент для создания идей контента. Помогает получить идеи экспертных постов, сторис и готовый контент-план на неделю.
+            </p>
+            <ul class="tags" aria-label="Возможности проекта">
+              <li>Идеи постов</li>
+              <li>Идеи сторис</li>
+              <li>Контент-план</li>
+              <li>Повторная генерация</li>
+            </ul>
+            <p class="project__note">Новый вариант можно получить одним нажатием.</p>
+            <!-- TODO: вставить ссылку на работающий проект «Генератор идей для постов» -->
+            <a class="btn btn--secondary project-link" href="#" data-placeholder="true">Посмотреть проект</a>
+          </div>
+        </article>
+
+        <p class="projects__footer">Оба проекта созданы мной с помощью вайбкодинга.</p>
+      </div>
+    </section>
+
+    <!-- ========== КАК ПРОХОДИТ ПЕРВАЯ КОНСУЛЬТАЦИЯ ========== -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__header narrow">
+          <h2 id="process-title" class="section__title">Сначала разберёмся в задаче</h2>
+          <p class="section__lead">Первая консультация занимает 15–20 минут и ничего не стоит.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3>Вы рассказываете</h3>
+            <p>Коротко рассказываете, что хотите сделать или какую задачу решить. Техническое задание не требуется.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3>Я уточняю</h3>
+            <p>Задаю несколько вопросов, чтобы лучше понять задачу и ожидаемый результат.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3>Смотрим варианты</h3>
+            <p>Определяем, могу ли я помочь и какое решение может подойти.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">04</span>
+            <h3>Решаем, что дальше</h3>
+            <p>Если задача мне подходит, я расскажу, какой вариант работы могу предложить и сколько это будет стоить. Решение о продолжении остаётся за вами.</p>
+          </li>
+        </ol>
+
+        <div class="section__cta">
+          <p class="section__closing">Без давления, обязательств и необходимости что-то покупать после разговора.</p>
+          <a class="btn btn--primary" href="#contacts">Договориться о первой встрече</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ОБО МНЕ ========== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__text narrow">
+          <h2 id="about-title">Я пришла в технологии не из IT. И считаю это своим преимуществом.</h2>
+          <p>Меня зовут Ирина Айбулатова.</p>
+          <p>
+            За моей спиной большой профессиональный путь: около 20 лет работы бухгалтером, в том числе главным бухгалтером, а затем почти 25 лет — в социальной защите, где я руководила отделами льгот и субсидий.
+          </p>
+          <p>
+            После 60 лет я решила освоить совершенно новое для себя направление. Прошла профессиональное обучение и получила квалификацию промпт-инженера, специалиста по работе с нейросетями.
+          </p>
+          <p>
+            Сегодня работаю с нейросетями, создаю персональных GPT-помощников и развиваюсь в вайбкодинге, создавая собственные сайты и веб-инструменты.
+          </p>
+          <p>
+            Мне особенно нравится находить практическое применение технологиям в обычных человеческих и рабочих задачах.
+          </p>
+          <blockquote class="pullquote">
+            <p>Сложное можно объяснить нормально.</p>
+            <footer>Без десятка новых терминов там, где достаточно двух понятных предложений.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== МОЙ ПОДХОД ========== -->
+    <section class="section section--alt" id="approach" aria-labelledby="approach-title">
+      <div class="container narrow">
+        <h2 id="approach-title" class="section__title">Технология — не цель. Это инструмент.</h2>
+        <p>Мне важно сначала понять:</p>
+        <ul class="plain-list">
+          <li>Что человеку действительно нужно?</li>
+          <li>Что хочется упростить?</li>
+          <li>Где теряется время?</li>
+          <li>Какой результат должен получиться?</li>
+        </ul>
+        <p>И только после этого выбирать решение.</p>
+        <p>Если достаточно хорошего промпта — не нужно создавать сложного помощника.</p>
+        <p>Если простое веб-приложение решает задачу — незачем превращать его в огромную систему.</p>
+        <p>Если технология здесь вообще не нужна — лучше сказать об этом сразу.</p>
+        <blockquote class="pullquote">
+          <p>Хорошее решение — не самое сложное. А то, которым человек действительно будет пользоваться.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ========== ПЕРВЫЙ ОПЫТ ========== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container narrow">
+        <h2 id="experience-title" class="section__title">Первый опыт работы с реальными задачами</h2>
+        <p>Во время обучения я создавала персональных GPT-помощников для реального проекта.</p>
+        <p>
+          В июне 2025 года разработала и продала своего первого GPT-агента-маркетолога для школы врача-репродуктолога.
+        </p>
+        <p>
+          Также работаю с задачами, связанными с промптами, контентом, анализом аудитории и созданием специализированных цифровых помощников.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== СТРАХИ И СОМНЕНИЯ ========== -->
+    <section class="section section--alt" id="doubts" aria-labelledby="doubts-title">
+      <div class="container narrow">
+        <h2 id="doubts-title" class="section__title">Если вы пока сомневаетесь</h2>
+
+        <div class="accordion" data-accordion>
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Я ничего не понимаю в нейросетях.
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>И не обязаны. Для этого и нужен специалист. Я объясню только то, что действительно понадобится для вашей задачи.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Я даже не знаю, как называется то, что мне нужно.
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Это нормально. Опишите задачу своими словами — вместе посмотрим, какое решение может подойти.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                А вдруг всё окажется слишком сложным?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Я стараюсь создавать решения, которыми человек сможет пользоваться без постоянной помощи разработчика.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Мне будут что-то продавать уже на первой консультации?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Нет. Первые 15–20 минут нужны, чтобы познакомиться, понять вашу задачу и определить, могу ли я помочь. Решение о дальнейшей работе остаётся за вами.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== СТОИМОСТЬ ========== -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section__header narrow">
+          <h2 id="pricing-title" class="section__title">Можно начать с небольшой задачи</h2>
+          <p class="section__lead">Не обязательно сразу заказывать большой проект.</p>
+        </header>
+
+        <div class="pricing">
+          <article class="price-card price-card--free reveal">
+            <h3>Первая консультация</h3>
+            <p class="price-card__detail">15–20 минут</p>
+            <p class="price-card__value">Бесплатно</p>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Промпты под ваши задачи</h3>
+            <p class="price-card__detail">Пакет из 10 промптов</p>
+            <p class="price-card__value">от 10 000 ₽</p>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Персональный GPT-помощник</h3>
+            <p class="price-card__detail">Под конкретные задачи</p>
+            <p class="price-card__value">от 15 000 ₽</p>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Комплекс GPT-помощников</h3>
+            <p class="price-card__detail">Для нескольких рабочих процессов</p>
+            <p class="price-card__value">от 35 000 ₽</p>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Анализ целевой аудитории</h3>
+            <p class="price-card__value">от 5 000 ₽</p>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Контент-план</h3>
+            <p class="price-card__detail">2 недели</p>
+            <p class="price-card__value">от 7 000 ₽</p>
+          </article>
+
+          <article class="price-card price-card--wide reveal">
+            <h3>Сайты и веб-приложения</h3>
+            <p class="price-card__value price-card__value--text">Стоимость после обсуждения задачи</p>
+          </article>
+        </div>
+
+        <p class="pricing__note">
+          Точная стоимость зависит от задачи и объёма работы. Сначала мы обсуждаем, что вам действительно нужно, и только потом договариваемся о работе.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <h2 id="faq-title" class="section__title">Частые вопросы</h2>
+
+        <div class="accordion" data-accordion>
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Нужно ли мне разбираться в нейросетях?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Нет. Всё необходимое для вашей задачи я объясню понятным языком.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Первая консультация действительно бесплатная?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Да. Она занимает примерно 15–20 минут. Мы познакомимся, коротко обсудим задачу и поймём, смогу ли я помочь.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Нужно ли заранее готовить техническое задание?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Нет. Достаточно своими словами рассказать, что вы хотите сделать или какую проблему решить.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Можно заказать небольшую работу?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Да. Не каждая задача требует большого проекта.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Вы работаете только с бизнесом?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Нет. Это может быть задача эксперта, самозанятого, небольшого проекта или частного человека.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Что делать, если у меня пока только идея?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Расскажите её. На первой консультации посмотрим, можно ли её реализовать и каким способом.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Можно заказать сайт или веб-приложение?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" hidden>
+              <p>Да. Небольшие сайты и веб-инструменты — одно из направлений, которое я развиваю с помощью вайбкодинга.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ФИНАЛЬНЫЙ CTA ========== -->
+    <section class="section cta-final reveal" aria-labelledby="cta-title">
+      <div class="container narrow cta-final__inner">
+        <h2 id="cta-title">Есть задача или просто идея?</h2>
+        <p>Не обязательно заранее понимать, какой промпт, помощник, сайт или приложение вам нужен.</p>
+        <p>Расскажите, что хочется получить.</p>
+        <p>Я задам несколько вопросов, и вместе посмотрим, смогу ли я помочь.</p>
+        <a class="btn btn--primary btn--lg btn--cta-pulse" href="#contacts">Обсудить мою задачу</a>
+        <p class="cta-final__note">Первая консультация — 15–20 минут, бесплатно.</p>
+      </div>
+    </section>
+
+    <!-- ========== КОНТАКТЫ ========== -->
+    <section class="section section--alt" id="contacts" aria-labelledby="contacts-title">
+      <div class="container narrow">
+        <h2 id="contacts-title" class="section__title">Выберите удобный способ связи</h2>
+        <p class="section__lead">
+          Можно просто написать несколько предложений о своей задаче. Техническое задание не требуется.
+        </p>
+
+        <div class="contacts">
+          <div class="contacts__primary">
+            <!-- TODO: вставить Telegram — заменить href="#" на ссылку вида https://t.me/ваш_username и убрать data-placeholder="true" -->
+            <a class="contact-card" href="#" data-placeholder="true" aria-label="Написать в Telegram">
+              <span class="contact-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M24.2 5.4L4.9 12.7c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.7.1.9.9.9.6 0 .8-.3 1.2-.7l2.2-2.2 4.6 3.4c.8.5 1.4.2 1.6-.8l2.9-13.7c.3-1.2-.4-1.8-1.3-1.4zM10.8 16.2l10.2-6.4c.5-.3.9 0 .5.3l-8.3 7.5-.3 3.3-1.9-4.7h-.2z" fill="currentColor"/></svg>
+              </span>
+              <span class="contact-card__label">Telegram</span>
+            </a>
+
+            <!-- TODO: вставить VK — заменить href="#" на ссылку вида https://vk.com/ваш_профиль и убрать data-placeholder="true" -->
+            <a class="contact-card" href="#" data-placeholder="true" aria-label="Написать ВКонтакте">
+              <span class="contact-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M15.2 20.5c-5.4 0-8.5-3.7-8.6-9.9h2.7c.1 4.5 2.1 6.5 3.6 6.9V10.6h2.5v3.9c1.5-.2 3.1-2 3.6-3.9h2.5c-.4 2.3-2.1 4.1-3.3 4.8 1.2.5 3.1 2.1 3.8 4.9h-2.8c-.6-1.8-2-3.2-3.8-3.4v3.6h-.2z" fill="currentColor"/></svg>
+              </span>
+              <span class="contact-card__label">ВКонтакте</span>
+            </a>
+
+            <!-- TODO: вставить WhatsApp — заменить href="#" на ссылку вида https://wa.me/79XXXXXXXXX и убрать data-placeholder="true" -->
+            <a class="contact-card" href="#" data-placeholder="true" aria-label="Написать в WhatsApp">
+              <span class="contact-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4.5a9.5 9.5 0 00-8.1 14.4L5 23.5l4.7-.9A9.5 9.5 0 1014 4.5zm5.5 13.5c-.2.6-1.2 1.1-1.9 1.2-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.2-.3.5-.4.8-.4h.6c.2 0 .4 0 .6.5.2.6.8 2 .8 2.1.1.1.1.3 0 .5l-.4.7c-.1.2-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1.1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1.2.1 1.6.8 1.9.9.3.2.5.2.6.4.1.2.1.9-.1 1.5z" fill="currentColor"/></svg>
+              </span>
+              <span class="contact-card__label">WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contacts__secondary">
+            <!-- TODO: вставить email — заменить href="mailto:#" на mailto:iren21091964@gmail.com и убрать data-placeholder="true" -->
+            <a class="contact-link" href="mailto:#">
+              <span class="contact-link__label">Электронная почта</span>
+              <span class="contact-link__value">указать e-mail</span>
+            </a>
+
+            <!-- TODO: вставить телефон — заменить href="tel:#" на tel:+79000807825, текст на номер, убрать data-placeholder="true" -->
+            <a class="contact-link" href="tel:#" data-placeholder="true">
+              <span class="contact-link__label">Телефон</span>
+              <span class="contact-link__value">указать номер</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Ирина Айбулатова</p>
+        <p class="footer__role">Промпт-инженер • специалист по нейросетям • вайбкодер</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#services">Услуги</a>
+        <a href="#projects">Проекты</a>
+        <a href="#about">Обо мне</a>
+        <a href="#pricing">Стоимость</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <!-- TODO: вставить Telegram -->
+        <a href="#" data-placeholder="true">Telegram</a>
+        <!-- TODO: вставить VK -->
+        <a href="#" data-placeholder="true">ВКонтакте</a>
+        <!-- TODO: вставить WhatsApp -->
+        <a href="#" data-placeholder="true">WhatsApp</a>
+      </div>
+
+      <p class="footer__copy">© <span id="year"></span> Ирина Айбулатова</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
